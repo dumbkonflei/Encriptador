@@ -3,8 +3,8 @@ const campo_mensaje = document.querySelector("#campo-mensaje");
 var regex = /^[a-z \n]+$/;
 const matriz_code = [
   ["e", "enter"],
-  ["i", "imes"],
   ["a", "ai"],
+  ["i", "imes"],
   ["o", "ober"],
   ["u", "ufat"],
 ];
@@ -46,6 +46,7 @@ function Encriptar(fraseEncriptada) {
   return fraseEncriptada;
 }
 function Desencriptar(fraseEncriptada) {
+  matriz_code.reverse()
   for (let i = 0; i < matriz_code.length; i++) {
     if (fraseEncriptada.includes(matriz_code[i][1])) {
       fraseEncriptada = fraseEncriptada.replaceAll(

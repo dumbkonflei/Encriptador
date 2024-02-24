@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador Alura</title>
+  </head>
+  <body>
+    <main class="main">
+      <section>
+        <textarea id="texto-encriptador" cols="30" rows="10" class="campo-texto" 
+        placeholder="Texto a encriptar"></textarea>
+        <div class="btn">
+        <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+    </div>
+      </section>
+      <section class="campo-mensaje">
+        <textarea id="campo-mensaje" cols="30" rows="10" class="mensaje" 
+        placeholder="No se ha encontrado ningun mensaje"></textarea>
+        <button class="btn-copiar" onclick="copiar(), limpiarTexto(), aviso()">Copiar</button>
+
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

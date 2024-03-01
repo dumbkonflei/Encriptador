@@ -177,9 +177,12 @@ footer{
     100% { background-position: 0 0; }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:400px){
   .glow-on-hover {
     width: auto;
     height: 40px;
+}
+.btn{
+  gap:15px;
 }
 }

@@ -8,7 +8,6 @@ const matriz_code = [
   ["o", "ober"],
   ["u", "ufat"],
 ];
-
 function btnEncriptar() {
   if (campo_texto.value === "" || campo_texto.length === 0) {
     alert("El mensaje esta vacio");
@@ -46,7 +45,7 @@ function Encriptar(fraseEncriptada) {
   return fraseEncriptada;
 }
 function Desencriptar(fraseEncriptada) {
-  matriz_code.reverse()
+  matriz_code.reverse();
   for (let i = 0; i < matriz_code.length; i++) {
     if (fraseEncriptada.includes(matriz_code[i][1])) {
       fraseEncriptada = fraseEncriptada.replaceAll(
@@ -57,8 +56,15 @@ function Desencriptar(fraseEncriptada) {
   }
   return fraseEncriptada;
 }
-copiar = () => navigator.clipboard.writeText(campo_mensaje.value);
-aviso = () => alert("Mensaje copiado")
-
-limpiarTexto = () => (document.getElementById("texto-encriptador").value = "");
-
+function copiar() {
+  if (campo_mensaje.value === "") {
+    alert("No hay mensaje que copiar");
+  } else {
+    return (
+      navigator.clipboard.writeText(campo_mensaje.value) &&
+      alert("Mensaje Copiado")
+    );
+  }
+}
+limpiarCaja = () => (document.getElementById("texto-encriptador").value = "");
+limpiarTexto = () =>(document.getElementById("campo-mensaje").value ="");

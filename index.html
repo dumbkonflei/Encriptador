@@ -4,24 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="main">
-      <section>
-        <textarea id="texto-encriptador" cols="30" rows="10" class="campo-texto" 
-        placeholder="Texto a encriptar"></textarea>
-        <div class="btn">
-        <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
-        <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-    </div>
+      <header>
+        <div class="tittle">Encriptador de Texto</div>
+      </header>
+      <section class="texto-a-encriptar">
+        <div class="container">
+        <textarea id="texto-encriptador" cols="30" rows="10" class="campo-texto" placeholder="Texto a encriptar"></textarea>
+        </div>
+      <div class="container">
+        <textarea id="campo-mensaje" cols="30" rows="10" class="mensaje" placeholder="No se ha encontrado ningun mensaje" disabled></textarea>
+     </div>
       </section>
-      <section class="campo-mensaje">
-        <textarea id="campo-mensaje" cols="30" rows="10" class="mensaje" 
-        placeholder="No se ha encontrado ningun mensaje"></textarea>
-        <button class="btn-copiar" onclick="copiar(), limpiarTexto(), aviso()">Copiar</button>
+      <div class="btn">
+        <button class="glow-on-hover" onclick="btnEncriptar()">
+          Encriptar
+        </button>
+        <button class="glow-on-hover" onclick="btnDesencriptar()">
+          Desencriptar
+        </button>
+        <button class="glow-on-hover" onclick="copiar(), limpiarTexto()">
+          Copiar
+        </button>
+          <button class="glow-on-hover" onclick="limpiarCaja()">Limpiar Texto</button>
+      </div>
+</main>
 
-      </section>
-    </main>
-    <script src="app.js"></script>
-  </body>
+<footer>ola</footer>
+<script src="app.js"></script>
+</body>
 </html>

@@ -1,0 +1,144 @@
+* {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+  background-image: url(https://i.gifer.com/fxVE.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+header {
+  font-size: 40px;
+}
+.tittle{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 75%, rgba(22, 78, 167, 1) 99%);
+  color: rgb(201, 38, 201);
+  height: auto;
+  width: 270px;
+  text-align: start;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid rgb(201, 38, 201);
+  border-radius: 15px;
+  padding: auto;
+}
+section{
+  text-align: center;
+}
+.container {
+  display: inline;
+}
+
+textarea {
+  color: rgb(201, 38, 201);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 75%, rgba(22, 78, 167, 1) 99%);
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 10px rgb(225, 0, 255);
+  resize: none;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  padding: 15px;
+  size-adjust: 50%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;  
+  margin-top: 20px; 
+
+}
+
+.btn button{
+  border-radius: 15px;
+  color: rgb(201, 38, 201);
+  border: 2px solid rgb(201, 38, 201);
+}
+.btnEncriptar:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+.btnEncriptar:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+
+}.btn-copiar:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+
+}.btn-limpiar:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #f706ff, #ffffff,#00ffd5, #002bff, #000000, #000000,#000000,#f706ff, #ffffff, #ff00c8);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+

@@ -18,7 +18,7 @@ header {
   font-size: 40px;
 }
 .tittle{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 75%, rgba(22, 78, 167, 1) 99%);
+  background:black;
   color: rgb(201, 38, 201);
   height: auto;
   width: 270px;
@@ -28,7 +28,7 @@ header {
   box-sizing: border-box;
   border: 2px solid rgb(201, 38, 201);
   border-radius: 15px;
-  padding: auto;
+  padding-left: 10px;
 }
 section{
   text-align: center;
@@ -39,17 +39,15 @@ section{
 
 textarea {
   color: rgb(201, 38, 201);
-  background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 75%, rgba(22, 78, 167, 1) 99%);
   border: 3px solid #ffffff;
   border-radius: 15px;
   box-shadow: 0px 10px 10px rgb(225, 0, 255);
-  resize: none;
   width: 250px;
   height: 250px;
   margin: 20px;
   padding: 15px;
-  size-adjust: 50%;
+  resize: none;
 }
 
 .btn {
@@ -66,28 +64,10 @@ textarea {
   color: rgb(201, 38, 201);
   border: 2px solid rgb(201, 38, 201);
 }
-.btnEncriptar:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-
-}
-.btnEncriptar:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-
-}.btn-copiar:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-
-}.btn-limpiar:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 
 .glow-on-hover {
-    width: 220px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     border: none;
     outline: none;
     color: #fff;
@@ -116,9 +96,9 @@ textarea {
 }
 
 .glow-on-hover:active {
+  transition: 500ms all;
     color: #000
 }
-
 
 .glow-on-hover:hover:before {
     opacity: 1;
@@ -136,9 +116,70 @@ textarea {
     border-radius: 10px;
 }
 
+footer{
+  margin-top: 35px;
+}
+.redes{
+  background:black;
+  color: rgb(201, 38, 201);
+  padding-right: 7px;
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: 95px;
+  box-sizing: border-box;
+  border: 2px solid rgb(201, 38, 201);
+  border-radius: 15px;
+  text-align: right;
+}
+.logo{
+  width: 50px;
+  height: 50px; 
+  position: absolute;
+  right: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.logo:active{
+  transition: 0.5 all;
+  opacity: 0;
+  
+}
+.logo:hover{
+  transition: 300ms all;
+  transform: scale(0.8);
+}
+
+.logo2{
+  position: absolute;
+  right:0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-right: 65px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.logo2:active{
+  transition: 0.5 all;
+  opacity: 0;
+  
+}
+.logo2:hover{
+  transition: 300ms all;
+  transform: scale(0.8);
+}
+
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
 
+@media screen and (max-width:480px){
+  .glow-on-hover {
+    width: auto;
+    height: 40px;
+}
+}
